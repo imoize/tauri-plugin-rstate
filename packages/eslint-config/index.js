@@ -22,6 +22,7 @@ export default function createConfig(options, ...userConfigs) {
       'perfectionist/sort-imports': ['error', {
         tsconfigRootDir: '.',
       }],
+      'toml/padding-line-between-pairs': ['off'],
     },
   }, {
     plugins: {
