@@ -1,6 +1,9 @@
 [workspace]
 resolver = "2"
-members = [ "crates/plugin-rstate", ]
+members = [
+  "crates/plugin-rstate",
+  "examples/svelte/src-tauri"
+]
 
 [workspace.package]
 edition = "2024"
