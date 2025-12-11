@@ -11,8 +11,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.6.1",
-    "eslint-config-turbo": "^2.6.3",
     "eslint-plugin-format": "^1.1.0",
-    "eslint-plugin-svelte": "^3.13.1"
+    "eslint-plugin-svelte": "^3.13.1",
+    "eslint-plugin-turbo": "^2.6.3"
   }
 }
