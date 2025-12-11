@@ -4,4 +4,5 @@ export default createConfig({
   rules: {
     'pnpm/yaml-enforce-settings': ['off'],
   },
+  ignores: ['crates/**', 'docs/**', 'examples/**', 'packages/**', 'target/**'],
 });
