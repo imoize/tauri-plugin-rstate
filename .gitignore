@@ -1,0 +1,54 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Editor
+.idea/*
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+# Rust
+debug
+target
+**/*.rs.bk
+*.pdb
+
+# Tauri
+gen
+
+# Node
+node_modules
+dist
+
+# Vite
+**/*vite*timestamp*
+
+# Vitepress
+**/.vitepress/cache
+**/.vitepress/dist
+
+# Nuxt
+.nuxt
+.output
+.data
+.nitro
+.cache
+
+# Svelte
+.svelte-kit
+
+# Local files
+.env
+.env.*
+!.env.example
+workspace.md
+
+# Others
+.temp
+coverage
+.eslintcache
