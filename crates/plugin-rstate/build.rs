@@ -1,4 +1,4 @@
-const COMMANDS: &[&str] = &[];
+const COMMANDS: &[&str] = &["get_initial_state", "get_state", "dispatch"];
 
 fn main() {
     tauri_plugin::Builder::new(COMMANDS)

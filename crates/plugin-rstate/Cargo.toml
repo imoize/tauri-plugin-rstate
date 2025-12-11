@@ -4,8 +4,15 @@ version = "0.1.0"
 license = "MIT"
 authors = [ "Brilliant Nz" ]
 links = "tauri-plugin-rstate"
+description = "A Tauri plugin for managing state in Rust, syncing to Frontend."
 repository = "https://github.com/imoize/tauri-plugin-rstate"
 homepage = "https://github.com/imoize/tauri-plugin-rstate"
+readme = "./README.md"
+keywords = [
+  "plugin",
+  "state",
+  "tauri"
+]
 
 [package.edition]
 workspace = true
@@ -15,9 +22,9 @@ workspace = true
 
 [dependencies]
 tauri = { version = "2.9.5" }
-serde = { version = "1.0.228", features = ["derive"] }
+serde = { version = "1.0.228", features = [ "derive" ] }
 serde_json = "1.0.145"
 thiserror = "2.0.17"
 
 [build-dependencies]
-tauri-plugin = { version = "2.5.2", features = ["build"] }
+tauri-plugin = { version = "2.5.2", features = [ "build" ] }
