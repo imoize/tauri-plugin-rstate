@@ -9,16 +9,21 @@
       "cache": false
     },
     "check": {
-      "dependsOn": ["^check"]
+      "dependsOn": ["^check"],
+      "cache": false
     },
     "check:types": {
       "dependsOn": ["^check:types"]
+    },
+    "clean": {
+      "cache": false
     },
     "lint": {
       "dependsOn": ["^lint"]
     },
     "lint:fix": {
-      "dependsOn": ["^lint:fix"]
+      "dependsOn": ["^lint:fix"],
+      "cache": false
     }
   },
   "globalEnv": ["TAURI_DEV_HOST"]

@@ -8,6 +8,7 @@
     "dev": "turbo run dev",
     "check": "turbo run check --filter ./packages/plugin-svelte --filter ./examples/svelte --parallel",
     "check:types": "turbo run check:types",
+    "clean": "turbo run clean",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "tauri:react": "pnpm --filter ./examples/react tauri:dev",
