@@ -1,3 +1,7 @@
-import config from "./packages/eslint-config/eslint.config.js";
+import createConfig from './packages/eslint-config/index.js';
 
-export default config;
+export default createConfig({
+  rules: {
+    'pnpm/yaml-enforce-settings': ['off'],
+  },
+});
