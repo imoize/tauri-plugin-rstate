@@ -11,5 +11,6 @@
       "persistent": true,
       "cache": false
     }
-  }
+  },
+  "globalEnv": ["TAURI_DEV_HOST"]
 }
