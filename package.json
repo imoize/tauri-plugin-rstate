@@ -4,14 +4,17 @@
   "private": true,
   "packageManager": "pnpm@10.25.0",
   "scripts": {
-    "build": "turbo run build",
+    "build": "turbo run build --filter .packages/plugin* --filter ./packages/tauri* --parallel",
     "dev": "turbo run dev",
+    "check": "turbo run check --filter ./packages/plugin-svelte --filter ./examples/svelte --parallel",
+    "check:types": "turbo run check:types",
     "lint": "turbo run lint",
-    "lint:fix": "turbo run lint --fix",
-    "check-types": "turbo run check-types"
+    "lint:fix": "turbo run lint:fix",
+    "tauri:react": "pnpm --filter ./examples/react tauri:dev",
+    "tauri:svelte": "pnpm --filter ./examples/svelte tauri:dev"
   },
   "devDependencies": {
-    "@types/node": "^24.10.1",
+    "@types/node": "^25.0.0",
     "eslint": "9.39.1",
     "tslib": "^2.8.1",
     "turbo": "^2.6.3",

@@ -4,12 +4,21 @@
     "build": {
       "outputs": ["dist/**"]
     },
-    "check-types": {
-      "dependsOn": ["^check-types"]
-    },
     "dev": {
       "persistent": true,
       "cache": false
+    },
+    "check": {
+      "dependsOn": ["^check"]
+    },
+    "check:types": {
+      "dependsOn": ["^check:types"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "lint:fix": {
+      "dependsOn": ["^lint:fix"]
     }
   },
   "globalEnv": ["TAURI_DEV_HOST"]
