@@ -242,9 +242,3 @@ pub fn state_changed(old_state: &JsonValue, new_state: &JsonValue, key: &str) ->
         _ => true, // One exists and the other doesn't, so it changed
     }
 }
-
-// Keep backward compatibility
-#[deprecated(since = "0.2.0", note = "Use state_changed instead")]
-pub fn state_field_changed(old_state: &JsonValue, new_state: &JsonValue, key: &str) -> bool {
-    state_changed(old_state, new_state, key)
-}

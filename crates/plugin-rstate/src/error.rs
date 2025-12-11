@@ -82,7 +82,3 @@ impl Serialize for RstateError {
         serializer.serialize_str(self.to_string().as_ref())
     }
 }
-
-// Backward compatibility alias (deprecated)
-#[deprecated(since = "0.2.0", note = "Use RstateError instead")]
-pub type Error = RstateError;
