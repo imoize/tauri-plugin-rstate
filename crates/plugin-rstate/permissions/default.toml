@@ -1,0 +1,9 @@
+"$schema" = "schemas/schema.json"
+
+[default]
+description = "Default permissions for the Rstate plugin"
+permissions = [
+  "allow-get-initial-state",
+  "allow-get-state",
+  "allow-dispatch"
+]

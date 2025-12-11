@@ -1,3 +1,13 @@
+## Default Permission
+
+Default permissions for the Rstate plugin
+
+#### This default permission set includes the following:
+
+- `allow-get-initial-state`
+- `allow-get-state`
+- `allow-dispatch`
+
 ## Permission Table
 
 <table>
